@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{LANGUAGE}">
+<head>
+	<title>{TITLE} :: {SUBTITLE}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="{THEME_HTTP_PATH}/style.css" rel="stylesheet" type="text/css" media="screen" />
+	
+	<script src="{THEME_HTTP_PATH}/js/jquery-1.7.1.min.js"></script>
+	<script src="theme/js/jQueryUI/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<link rel="stylesheet" href="theme/js/jQueryUI/css/smoothness/jquery-ui-1.8.18.custom.css" />
+	
+	<script src="theme/js/colorbox/colorbox/jquery.colorbox-min.js"></script>
+	<link rel="stylesheet" href="theme/js/colorbox/example1/colorbox.css" />
+
+    <script>window.global = {'width': {WIDTH}};
+    </script>
+
+	<script src="{THEME_HTTP_PATH}/js/dextend.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/jlog.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/global.js"></script>
+	<script src="{THEME_HTTP_PATH}/js/ajax_forms.js"></script>
+
+{JAVASCRIPT}
+</head>
+<body {BODY_JS_EVENTS} id="m-{BODY_PAGE}" class="design-full">
+
+<div class="ajax-spinner" style="display: none;" height="0"></div>
+<ul id="jlog"></ul>
+
+<div id="main-header">
+	<div class="image"><a href="?m=stats_main"><img src="{THEME_HTTP_PATH}/images/citadel.jpg" /></a></div>
+	<h2><span></span> <a href="{SUBTITLE_LINK}">{SUBTITLE}</a></h2>
+
+    <ul id="supermenu">
+        <li class="onlinebots"><a href="?m=ajax/supermenu_onlinebots"><img src="theme/images/icons/online.png" /> Online?</a></li>
+        </ul>
+</div>
+<table width="100%">
+<tr>
+  <td width="200" class="menu">
+    <div class="menu_header">{INFO_TITLE}</div>
+    <div class="menu_info">{INFO_USERNAME_TITLE} {INFO_USERNAME}<br/>{INFO_DATE}<br/>{INFO_TIME} @ <small>{INFO_TIMEZONE}</small></div>
+    {MAINMENU}
+  </td>
+  <td class="context">
+
+	<div id="flashmsg">{FLASHMSG}</div>
